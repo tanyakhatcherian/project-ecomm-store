@@ -1,4 +1,4 @@
-# Information Architecture 2, Project (Summer 202)
+# Information Architecture 2, Project (Summer 2020)
 ## E-Comm Web Store: Design, Content & Responsive Styling
 **Value: 40% of course grade**
 
