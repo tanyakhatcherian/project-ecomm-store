@@ -86,8 +86,13 @@ button {
     position: absolute;
 }
 
+.hide {
+    color: transparent;
+}
+
 ::placeholder {
     color: #dbbdcf;
+    padding: .5em;
 }
 
 a {
@@ -99,10 +104,9 @@ a:hover {
     color: thistle;
 }
 
-
 legend {
     text-transform: uppercase;
-    color: palevioletred;
+    color: #d87093;
 }
 
 .center {
