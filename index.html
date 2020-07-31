@@ -3,63 +3,65 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>[Document title]</title>
-    <meta name="description" content="[A short description of this site for SEO]">
-    <meta name="author" content="[Your Name]">
+    <title>Cauldron Cosmetics</title>
+    <meta name="description" content="natural and organic soap products">
+    <meta name="author" content="Tanya Khatcherian">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="css/style.css">
-    <!-- Remember to update the values in [square braces] above -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,400;1,500&display=swap">
   </head>
+
   <body>
     <header>
-      <!-- Site logo, replace with your own -->
-      <a href="index.html"><img src="img/logo.svg" alt="HTML Logo (replace this!)"></a>
-
-      <!-- Navigation menu and toggle button (non-functional) -->
-      <nav aria-label="Primary">
-        <button type="button">
-          <span class="material-icons">menu</span>
-        </button>
-        <ul>
-          <li><a href="#">Category</a>
-            <ul>
-              <li><a href="#">Subcategory</a></li>
-              <li><a href="#">Subcategory</a></li>
-              <li><a href="#">Subcategory</a></li>
-            </ul>
-          </li>
-          <li><a href="#">Category</a></li>
-          <li><a href="#">Category</a></li>
-          <li><a href="#">Category</a></li>
-        </ul>
-      </nav>
-
-      <!-- Search for a product (non-functional) -->
-      <form>
-        <label>Search
-          <input type="search" name="find" id="find">
-        </label>
-        <button type="button"><span class="material-icons">search</span></button>
-      </form>
-
-      <!-- Additional nav links -->
-
-      <ul>
-        <li><a href="#"><span class="material-icons">favorite_border</span></a></li>
-        <li><a href="#"><span class="material-icons">shopping_cart</span></a></li>
-      </ul>
+      <a href="index.html"><img class = "logo" src="img/logo.svg" alt="cauldron cosmetics logo"></a>
     </header>
+    
+    <form class="searchbar">
+      <input class ="sbar" type="search" name="find" id="find" placeholder=" search...">
+       <button type="button" class="btn">></button>
+      </input>
+    </form>
+
+    <div class="topnav">
+      <span class="material-icons navbtn">reorder</span></a>
+      <select class ="products" name="products" id="sort">
+        <option value="soap">Soaps</option>
+        <option value="face">Face</option>
+        <option value="body">Body</option>
+      </select>
+      <select class ="products skincare" name="products" id="sort">
+        <option value="skincare">Skincare</option>
+        <option value="cleanser">Cleansers</option>
+        <option value="moisturizers">Moisturizers</option>
+        <option value="toners">Toners</option>
+        <option value="masks">Masks</option>
+      </select>      
+      <select class ="products shower" name="products" id="sort">
+        <option value="shower">Shower</option>
+        <option value="shampoo">Shampoo</option>
+        <option value="conditioner">Conditioner</option>
+        <option value="showergel">Shower Gels</option>
+        <option value="scrubs">Scrubs</option>
+      </select>      
+      <select class ="products bath" name="products" id="sort">
+        <option value="bath">Bath</option>
+        <option value="bathbomb">Bath Bomb</option>
+        <option value="bubbles">Bubbles</option>
+        <option value="oils">Oils</option>
+      </select>
+      <a href="#"><span class="material-icons navbtn">shopping_cart</span></a>
+      <a href="#"><span class="material-icons navbtn">favorite_border</span></a>
+    </div>
 
     <main>
       <header>
-        <h1>Sale on [Category Name]</h1>
-
+        <h1>SALE ON CLEANSERS</h1>
         <!-- Filtering product form -->
         <form>
-          <h2>Filters</h2>
           <fieldset>
-            <label for="sort">Show</label>
+            <legend>Filters</legend>
+            <label for="sort">SHOW: </label>
             <select name="sort" id="sort">
               <option value="price-high">Price, highest to lowest</option>
               <option value="price-low">Price, lowest to highest</option>
@@ -67,50 +69,49 @@
             </select>
           </fieldset>
           <fieldset>
-            <legend>Colour</legend>
-            <ul>
-              <li><input type="checkbox" name="colour" value="black" id="black"> <label for="black">Black</label></li>
-              <li><input type="checkbox" name="colour" value="white" id="white"> <label for="white">White</label></li>
-              <li><input type="checkbox" name="colour" value="grey" id="grey"> <label for="grey">Grey</label></li>
-              <li><input type="checkbox" name="colour" value="red" id="red"> <label for="red">Red</label></li>
-              <li><input type="checkbox" name="colour" value="blue" id="blue"> <label for="blue">Blue</label></li>
+            <legend>Scent</legend>
+            <ul class="checks">
+              <li><input type="checkbox" name="scent" value="Citrusy" id="Citrusy"> <label for="Citrusy">Citrusy</label></li>
+              <li><input type="checkbox" name="scent" value="Floral" id="Floral"> <label for="Floral">Floral</label></li>
+              <li><input type="checkbox" name="scent" value="Herbal" id="Herbal"> <label for="Herbal">Herbal</label></li>
+              <li><input type="checkbox" name="scent" value="Sweet" id="Sweet"> <label for="Sweet">Sweet</label></li>
             </ul>
           </fieldset>
           <fieldset>
-            <legend>Sizes</legend>
-            <ol>
-              <li><input type="checkbox" name="size" value="xs" id="xs"> <label for="xs">XS</label></li>
-              <li><input type="checkbox" name="size" value="sm" id="sm"> <label for="sm">S</label></li>
-              <li><input type="checkbox" name="size" value="md" id="md"> <label for="md">M</label></li>
-              <li><input type="checkbox" name="size" value="lg" id="lg"> <label for="lg">L</label></li>
-              <li><input type="checkbox" name="size" value="xl" id="xl"> <label for="xl">XL</label></li>
-            </ol>
+            <legend>Benefits</legend>
+            <ul class ="checks">
+              <li><input type="checkbox" name="benefts" value="Balancing" id="Balancing"> <label for="Balancing">Balancing</label></li>
+              <li><input type="checkbox" name="benefits" value="Toning" id="Toning"> <label for="Toning">Toning</label></li>
+              <li><input type="checkbox" name="benefits" value="Exfoliating" id="Exfoliating"> <label for="Exfoliating">Exfoliating</label></li>
+              <li><input type="checkbox" name="benefits" value="Moisturizing" id="Moisturizing"> <label for="Moisturizing">Moisturizing</label></li>
+              <li><input type="checkbox" name="benefits" value="Soothing" id="Soothing"> <label for="Soothing">Soothing</label></li>
+            </ul>
           </fieldset>
           <fieldset>
-            <legend>Ratings (above)</legend>
-            <ol>
+            <legend>Ratings</legend>
+            <ol class="ratings">
               <li>
                 <input type="radio" name="rating" value="4" id="aboveFour">
                 <label for="aboveFour">
-                  <span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star_border</span>
+                  <span class="material-icons sizebtn">star</span><span class="material-icons sizebtn">star</span><span class="material-icons sizebtn">star</span><span class="material-icons sizebtn">star</span><span class="material-icons sizebtn">star_border</span>
                 </label>
               </li>
               <li>
                 <input type="radio" name="rating" value="3" id="aboveThree">
                 <label for="aboveThree">
-                  <span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star_border</span><span class="material-icons">star_border</span>
+                  <span class="material-icons sizebtn">star</span><span class="material-icons sizebtn">star</span><span class="material-icons sizebtn">star</span><span class="material-icons sizebtn">star_border</span><span class="material-icons sizebtn">star_border</span>
                 </label>
               </li>
               <li>
                 <input type="radio" name="rating" value="2" id="aboveTwo">
                 <label for="aboveTwo">
-                  <span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star_border</span><span class="material-icons">star_border</span><span class="material-icons">star_border</span>
+                  <span class="material-icons sizebtn">star</span><span class="material-icons sizebtn">star</span><span class="material-icons sizebtn">star_border</span><span class="material-icons sizebtn">star_border</span><span class="material-icons sizebtn">star_border</span>
                 </label>
               </li>
               <li>
                 <input type="radio" name="rating" value="1" id="aboveOne">
                 <label for="aboveOne">
-                  <span class="material-icons">star</span><span class="material-icons">star_border</span><span class="material-icons">star_border</span><span class="material-icons">star_border</span><span class="material-icons">star_border</span>
+                  <span class="material-icons sizebtn">star</span><span class="material-icons sizebtn">star_border</span><span class="material-icons sizebtn">star_border</span><span class="material-icons sizebtn">star_border</span><span class="material-icons sizebtn">star_border</span>
                 </label>
               </li>
             </ol>
@@ -118,208 +119,134 @@
         </form>
       </header>
 
-      <section>
-        <h2>Results</h2>
+      <h1>Results</h1>
 
+      <section class ="pdisplay">
         <!-- Product 1 -->
-        <article>
+        <article class = "items">
           <header>
-            <img src="img/product.jpg" alt="Product Image">
+            <img src="img/product1.jpg" alt="Product Image" class="pic">
+            <section class="center">
+            <span class="material-icons sizebtn">star</span><span class="material-icons sizebtn">star</span><span class="material-icons sizebtn">star</span><span class="material-icons sizebtn">star_half</span>
+            <br>
+            <data value="39"><del>$65.00</del> <ins>$45.00</ins></data>
+            <br>
+            <button type="button"><span class="material-icons cartheart">add_shopping_cart</span></button>
+            <button type="button"><span class="material-icons cartheart">favorite</span></button>
+          </section>
           </header>
-          <h3>Product Name</h3>
-          <p>Here is a shot of this product that might entice a user to click and add it to their cart.</p>
-          <form>
-            <fieldset>
-              <legend>Colours</legend>
-              <ul>
-                <li><label><input type="radio" name="colour" value="r"> Red</label></li>
-                <li><label><input type="radio" name="colour" value="w"> White</label></li>
-                <li><label><input type="radio" name="colour" value="b"> Blue</label></li>
-              </ul>
-            </fieldset>
-
-            <fieldset>
-              <legend>Sizes</legend>
-              <ol>
-                <li><label><input type="radio" name="size" value="m"> M</label></li>
-                <li><label><input type="radio" name="size" value="l"> L</label></li>
-                <li><label><input type="radio" name="size" value="xl"> XL</label></li>
-              </ol>
-            </fieldset>
-
-            <footer>
-              <dl>
-                <dt>Rating</dt>
-                <dd>4.4 <span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star_half</span></dd>
-              </dl>
-              <data value="39"><del>$50.00</del> <ins>$39.00</ins></data>
-              <button type="button"><span class="material-icons">add_shopping_cart</span> Add to Cart</button>
-              <button type="button"><span class="material-icons">favorite</span></button>
-              <a href="#">see more</a>
-            </footer>
-          </form>
+          <h2>"Mud Cleanse"</h2>
+          <p>Our signature "mud cleanse" is made with three main organic ingredients - clay, black charcoal and hibiscus. 
+            It was created to help balance and sooth dry, acne prone skin. The floral scent is light, but refreshing. 
+            <a href="#">Check the reviews here.</a>
+          </p>
         </article>
 
         <!-- Product 2 -->
-        <article>
+        <article class="items">
           <header>
-            <img src="img/product.jpg" alt="Product Image">
+            <img src="img/product2.jpg" alt="Product Image">
+            <section class="center">
+              <span class="material-icons sizebtn">star</span><span class="material-icons sizebtn">star</span><span class="material-icons sizebtn">star</span><span class="material-icons sizebtn">star</span><span class="material-icons sizebtn">star</span>
+              <br>
+              <data value="39"><del>$100.00</del> <ins>$85.00</ins></data>
+              <br>
+              <button type="button"><span class="material-icons cartheart">add_shopping_cart</span></button>
+              <button type="button"><span class="material-icons cartheart">favorite</span></button>
+            </section>
           </header>
-          <h3>Product Name</h3>
-          <p>Here is a shot of this product that might entice a user to click and add it to their cart.</p>
-          <form>
-            <fieldset>
-              <legend>Colours</legend>
-              <ul>
-                <li><label><input type="radio" name="colour" value="r"> Red</label></li>
-                <li><label><input type="radio" name="colour" value="w"> White</label></li>
-                <li><label><input type="radio" name="colour" value="b"> Blue</label></li>
-              </ul>
-            </fieldset>
-
-            <fieldset>
-              <legend>Sizes</legend>
-              <ol>
-                <li><label><input type="radio" name="size" value="m"> M</label></li>
-                <li><label><input type="radio" name="size" value="l"> L</label></li>
-                <li><label><input type="radio" name="size" value="xl"> XL</label></li>
-              </ol>
-            </fieldset>
-
-            <footer>
-              <dl>
-                <dt>Rating</dt>
-                <dd>4.4 <span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star_half</span></dd>
-              </dl>
-              <data value="39"><del>$50.00</del> <ins>$39.00</ins></data>
-              <button type="button"><span class="material-icons">add_shopping_cart</span> Add to Cart</button>
-              <button type="button"><span class="material-icons">favorite</span></button>
-              <a href="#">see more</a>
-            </footer>
-          </form>
+          <h2>"Rose Petal"</h2>
+          <p>Our top rated elixir - rose petal is a face cleansing oil created to help with skin 
+            pigmentation and redness. It has been proven to balance and tone skin after 1 week of use. 
+            <a href="#">Check the reviews here.</a>
+          </p>
         </article>
 
         <!-- Product 3 -->
-        <article>
+        <article class="items">
           <header>
-            <img src="img/product.jpg" alt="Product Image">
+            <img src="img/product3.jpg" alt="Product Image">
+            <section class="center">
+              <span class="material-icons sizebtn">star</span><span class="material-icons sizebtn">star</span><span class="material-icons sizebtn">star</span>
+              <br>
+              <data value="39"><del>$30.00</del> <ins>$20.00</ins></data>
+              <br>
+              <button type="button"><span class="material-icons cartheart">add_shopping_cart</span></button>
+              <button type="button"><span class="material-icons cartheart">favorite</span></button>
+            </section>
           </header>
-          <h3>Product Name</h3>
-          <p>Here is a shot of this product that might entice a user to click and add it to their cart.</p>
-          <form>
-            <fieldset>
-              <legend>Colours</legend>
-              <ul>
-                <li><label><input type="radio" name="colour" value="r"> Red</label></li>
-                <li><label><input type="radio" name="colour" value="w"> White</label></li>
-                <li><label><input type="radio" name="colour" value="b"> Blue</label></li>
-              </ul>
-            </fieldset>
-
-            <fieldset>
-              <legend>Sizes</legend>
-              <ol>
-                <li><label><input type="radio" name="size" value="m"> M</label></li>
-                <li><label><input type="radio" name="size" value="l"> L</label></li>
-                <li><label><input type="radio" name="size" value="xl"> XL</label></li>
-              </ol>
-            </fieldset>
-
-            <footer>
-              <dl>
-                <dt>Rating</dt>
-                <dd>4.4 <span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star_half</span></dd>
-              </dl>
-              <data value="39"><del>$50.00</del> <ins>$39.00</ins></data>
-              <button type="button"><span class="material-icons">add_shopping_cart</span> Add to Cart</button>
-              <button type="button"><span class="material-icons">favorite</span></button>
-              <a href="#">see more</a>
-            </footer>
-          </form>
+          <h2>"The Vert"</h2>
+          <p>The Vert is our green tea solid cleanser. To reduce packaging waste, we've created a soap bar fortified with green 
+            tea extract to balance and moisturize your skin.
+            <a href="#">Check the reviews here.</a>
+          </p>
         </article>
   
         <!-- Product 4 -->
-        <article>
+        <article class="items">
           <header>
-            <img src="img/product.jpg" alt="Product Image">
+            <img src="img/product4.jpg" alt="Product Image">
+            <section class="center">
+              <span class="material-icons sizebtn">star</span><span class="material-icons sizebtn">star</span><span class="material-icons sizebtn">star</span><span class="material-icons sizebtn">star</span><span class="material-icons sizebtn">star_half</span>
+              <br>
+              <data value="39"><del>$85.00</del> <ins>$70.00</ins></data>
+              <br>
+              <button type="button"><span class="material-icons cartheart">add_shopping_cart</span></button>
+              <button type="button"><span class="material-icons cartheart">favorite</span></button>
+            </section>
           </header>
-          <h3>Product Name</h3>
-          <p>Here is a shot of this product that might entice a user to click and add it to their cart.</p>
-          <form>
-            <fieldset>
-              <legend>Colours</legend>
-              <ul>
-                <li><label><input type="radio" name="colour" value="r"> Red</label></li>
-                <li><label><input type="radio" name="colour" value="w"> White</label></li>
-                <li><label><input type="radio" name="colour" value="b"> Blue</label></li>
-              </ul>
-            </fieldset>
-
-            <fieldset>
-              <legend>Sizes</legend>
-              <ol>
-                <li><label><input type="radio" name="size" value="m"> M</label></li>
-                <li><label><input type="radio" name="size" value="l"> L</label></li>
-                <li><label><input type="radio" name="size" value="xl"> XL</label></li>
-              </ol>
-            </fieldset>
-
-            <footer>
-              <dl>
-                <dt>Rating</dt>
-                <dd>4.4 <span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star_half</span></dd>
-              </dl>
-              <data value="39"><del>$50.00</del> <ins>$39.00</ins></data>
-              <button type="button"><span class="material-icons">add_shopping_cart</span> Add to Cart</button>
-              <button type="button"><span class="material-icons">favorite</span></button>
-              <a href="#">see more</a>
-            </footer>
-          </form>
+          <h2>"Whipped"</h2>
+          <p>Whipped - a soft, whipped cleanser that was created for intense moisturization. If you are looking for something
+            to sooth your dry skin - this will do it. We swear.
+            <a href="#">Check the reviews here.</a>
+          </p>
         </article>
 
         <!-- Product 5 -->
-        <article>
+        <article class="items">
           <header>
-            <img src="img/product.jpg" alt="Product Image">
+            <img src="img/product5.jpg" alt="Product Image">
+            <section class="center">
+              <span class="material-icons sizebtn">star</span><span class="material-icons sizebtn">star</span><span class="material-icons sizebtn">star</span><span class="material-icons sizebtn">star</span>
+              <br>
+              <data value="39"><del>$50.00</del> <ins>$35.00</ins></data>
+              <br>
+              <button type="button"><span class="material-icons cartheart">add_shopping_cart</span></button>
+              <button type="button"><span class="material-icons cartheart">favorite</span></button>
+            </section>
           </header>
-          <h3>Product Name</h3>
-          <p>Here is a shot of this product that might entice a user to click and add it to their cart.</p>
-          <form>
-            <fieldset>
-              <legend>Colours</legend>
-              <ul>
-                <li><label><input type="radio" name="colour" value="r"> Red</label></li>
-                <li><label><input type="radio" name="colour" value="w"> White</label></li>
-                <li><label><input type="radio" name="colour" value="b"> Blue</label></li>
-              </ul>
-            </fieldset>
-
-            <fieldset>
-              <legend>Sizes</legend>
-              <ol>
-                <li><label><input type="radio" name="size" value="m"> M</label></li>
-                <li><label><input type="radio" name="size" value="l"> L</label></li>
-                <li><label><input type="radio" name="size" value="xl"> XL</label></li>
-              </ol>
-            </fieldset>
-
-            <footer>
-              <dl>
-                <dt>Rating</dt>
-                <dd>4.4 <span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star_half</span></dd>
-              </dl>
-              <data value="39"><del>$50.00</del> <ins>$39.00</ins></data>
-              <button type="button"><span class="material-icons">add_shopping_cart</span> Add to Cart</button>
-              <button type="button"><span class="material-icons">favorite</span></button>
-              <a href="#">see more</a>
-            </footer>
-          </form>
+          <h2>"Jelly"</h2>
+          <p>An energizing, citrusy cleanser that was created to wake you up even on your sleepiest days! Jelly was created
+            with lemon and orange extracts to tone and tighten your skin.
+          <a href="#">Check the reviews here.</a>
+          </p>
         </article>
-      </section>
+<!--Product 6-->
+        <article class = "items">
+          <header>
+          <img src="img/product6.jpg" alt="Product Image" class="pic">
+            <section class="center">
+              <span class="material-icons sizebtn">star</span><span class="material-icons sizebtn">star</span><span class="material-icons sizebtn">star_half</span>
+              <br>
+              <data value="39"><del>$25.00</del> <ins>$15.00</ins></data>
+              <br>
+              <button type="button"><span class="material-icons cartheart">add_shopping_cart</span></button>
+              <button type="button"><span class="material-icons cartheart">favorite</span></button>
+              <br>
+            </section>
+          </header>
+        <h2>"Frosting"</h2>
+        <p>Our little frosting smells so sweet, you'd almost think it was candy. This exfoliating cleanser bar
+          will reduce blackheads while also soothing the skin with its shea butter properties.
+          <a href="#">Check the reviews here.</a>
+        </p>
+      </article>
+    </section>
 
+<!--navigation stuff that i have to fix in css-->
       <section role="navigation" aria-label="Pagination">
         <p>1-5 of 23 products found</p>
-        <ol>
+        <ol class="pages">
           <li><a href="#" aria-label="Current Page, Page 1" aria-current="true">1</a></li>
           <li><a href="#" aria-label="Page 2">2</a></li>
           <li><a href="#" aria-label="Page 3">3</a></li>
@@ -328,21 +255,21 @@
         </ol>
       </section>
     </main>
-
+<!--footer stuff that i have to fix in css-->
     <footer>
-      <p>&copy; Copyright, 1991.</p>
       <nav aria-label="Legal">
-        <ul>
-          <li><a href="#">Terms of Use</a></li>
-          <li><a href="#">Privacy Policy</a></li>
-          <li><a href="#">Accessibility Policy</a></li>
+        <ul class="links">
+          <li><a href="#" class="links">Terms of Use</a></li>
+          <li><a href="#" class="links">Privacy Policy</a></li>
+          <li><a href="#" class="links">Accessibility Policy</a></li>
         </ul>
       </nav>
-      <ul>
-        <li><a href="#"><span class="material-icons">face</span> Facebook</a></li>
-        <li><a href="#"><span class="material-icons">camera_alt</span> Instagram</a></li>
-        <li><a href="#"><span class="material-icons">alternate_email</span> Twitter</a></li>
+      <ul class="links">
+        <li><a href="#" class="links">Facebook</a></li>
+        <li><a href="#" class="links">Instagram</a></li>
+        <li><a href="#" class="links">Twitter</a></li>
       </ul>
+      <p>&copy; Copyright, 1991.</p>
     </footer>
 
   </body>

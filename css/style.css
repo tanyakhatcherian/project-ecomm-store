@@ -1,1 +1,213 @@
-/* Note there a few "reset" styles given in reset.css. You may opt to remove those if you wish. */
+body {
+    font-family: poppins;
+    background-color: rgb(252, 249, 252);
+	padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 1em;
+}
+
+.logo {
+    padding-bottom: 1em;
+    height: auto;
+    width: 100%;
+}
+
+ul, ol {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-content: flex-start;
+    list-style: none;
+    text-transform: lowercase;
+    padding: 0em;
+    color: palevioletred;
+}
+
+.links {
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-content: center;
+    font-size: 11px;
+    color: palevioletred;
+}
+
+fieldset {
+    border-color: #e8b4d2;
+    border-style: dotted;
+    padding: 1em;
+    margin-top: 1em;
+    font-size: 85%;
+    color: palevioletred;
+    background-color: white;
+}
+
+button {
+    background: transparent;
+    border-color: transparent;
+}
+
+.btn {
+    color: #e8b4d2;
+    border-radius: 20px;
+    margin-left: .2em;
+    font-weight: 600;
+    position: relative;
+}
+
+.sizebtn {
+    font-size: 20px;
+    color: palevioletred;
+}
+
+.navbtn {
+    font-size: 20px;
+    color: palevioletred;
+}
+
+.cartheart {
+    color: rgb(216, 170, 216);
+    font-size: 20px;
+}
+
+.searchbar {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: .5em;
+    width: 100%;
+}
+
+.sbar {
+    height: auto;
+    width: 85%;
+    max-width: 100%;
+    background-color: transparent;
+    border-color: #e8b4d2;
+    border-radius: 20px;
+    position: absolute;
+}
+
+::placeholder {
+    color: #dbbdcf;
+}
+
+a {
+    color: palevioletred;
+    font-size: 13px;
+}
+
+a:hover {
+    color: thistle;
+}
+
+
+legend {
+    text-transform: uppercase;
+    color: palevioletred;
+}
+
+.center {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.checks {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+data {
+    font-size: 15px;
+    color: palevioletred;
+}
+
+.ratings {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: flex-start;
+    padding: 0em;
+}
+
+.topnav {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-around;
+    margin-top: .5em;
+    padding: .5em;
+    max-width: 100%;
+    line-height: 2px;
+}
+
+select {
+    color:palevioletred;
+    background-color: transparent;
+    border-color: #e8b4d2;
+    border-radius: 20px;
+    text-transform: lowercase;
+    font-size: 12px;
+}
+
+select.products {
+    background-color: transparent;
+    border-color: transparent;
+    font-family: Arial, Helvetica, sans-serif;
+    color: palevioletred;
+    text-transform: uppercase;
+    font-size: 10px;
+    width: 4em;
+    max-width: 100%;
+    -webkit-appearance: none;
+}
+
+select.bath {
+    width: 3em;
+}
+
+select.shower {
+    width: 5em;
+}
+
+select.skincare {
+    width: 5.5em;
+}
+
+h1 {
+    font-size: 20px;
+    text-align: center;
+    color: palevioletred;
+    text-transform: uppercase;
+}
+
+.pdisplay {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    background-color: white;
+    border-color: #e8b4d2;
+    border-style: dotted;
+}
+
+.items {
+    align-content: center;
+}
+
+p {
+    font-size: 13px;
+    color: palevioletred;
+    text-align: center;
+    padding-left: 1em;
+    padding-right: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h2 {
+    font-size: 15px;
+    color: rgb(211, 100, 137);
+    text-align: center;
+    font-weight: 500;
+    font-style: italic;
+    text-transform: uppercase;
+}
