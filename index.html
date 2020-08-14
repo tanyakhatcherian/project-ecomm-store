@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,400;1,500&display=swap">
   </head>
 
@@ -56,8 +57,9 @@
 
     <main>
       <header>
-        <h1>SALE ON CLEANSERS</h1>
+        <h1><span class="material-icons headbtn">favorite_border</span> FEATURED SALE <span class="material-icons headbtn">favorite_border</span></h1>
         <!-- Filtering product form -->
+        <div class="container">
         <form>
           <fieldset>
             <legend>Filters</legend>
@@ -117,14 +119,11 @@
             </ol>
           </fieldset>
         </form>
-      </header>
 
-      <h1>Results</h1>
-
+      <h1 class="hidden">Results</h1>
       <section class ="pdisplay">
         <!-- Product 1 -->
-        <article class = "items">
-          <header>
+        <article>
             <img src="img/product1.jpg" alt="Product Image" class="pic">
             <section class="center">
             <span class="material-icons sizebtn">star</span><span class="material-icons sizebtn">star</span><span class="material-icons sizebtn">star</span><span class="material-icons sizebtn">star_half</span>
@@ -134,7 +133,6 @@
             <button type="button"><span class="material-icons cartheart">add_shopping_cart</span></button>
             <button type="button"><span class="material-icons cartheart">favorite</span></button>
           </section>
-          </header>
           <h2>"Mud Cleanse"</h2>
           <p>Our signature "mud cleanse" is made with three main organic ingredients - clay, black charcoal and hibiscus. 
             It was created to help balance and sooth dry, acne prone skin. The floral scent is light, but refreshing. 
@@ -143,8 +141,7 @@
         </article>
 
         <!-- Product 2 -->
-        <article class="items">
-          <header>
+        <article>
             <img src="img/product2.jpg" alt="Product Image">
             <section class="center">
               <span class="material-icons sizebtn">star</span><span class="material-icons sizebtn">star</span><span class="material-icons sizebtn">star</span><span class="material-icons sizebtn">star</span><span class="material-icons sizebtn">star</span>
@@ -154,7 +151,6 @@
               <button type="button"><span class="material-icons cartheart">add_shopping_cart</span></button>
               <button type="button"><span class="material-icons cartheart">favorite</span></button>
             </section>
-          </header>
           <h2>"Rose Petal"</h2>
           <p>Our top rated elixir - rose petal is a face cleansing oil created to help with skin 
             pigmentation and redness. It has been proven to balance and tone skin after 1 week of use. 
@@ -163,8 +159,7 @@
         </article>
 
         <!-- Product 3 -->
-        <article class="items">
-          <header>
+        <article>
             <img src="img/product3.jpg" alt="Product Image">
             <section class="center">
               <span class="material-icons sizebtn">star</span><span class="material-icons sizebtn">star</span><span class="material-icons sizebtn">star</span>
@@ -174,7 +169,6 @@
               <button type="button"><span class="material-icons cartheart">add_shopping_cart</span></button>
               <button type="button"><span class="material-icons cartheart">favorite</span></button>
             </section>
-          </header>
           <h2>"The Vert"</h2>
           <p>The Vert is our green tea solid cleanser. To reduce packaging waste, we've created a soap bar fortified with green 
             tea extract to balance and moisturize your skin.
@@ -183,8 +177,7 @@
         </article>
   
         <!-- Product 4 -->
-        <article class="items">
-          <header>
+        <article>
             <img src="img/product4.jpg" alt="Product Image">
             <section class="center">
               <span class="material-icons sizebtn">star</span><span class="material-icons sizebtn">star</span><span class="material-icons sizebtn">star</span><span class="material-icons sizebtn">star</span><span class="material-icons sizebtn">star_half</span>
@@ -194,7 +187,6 @@
               <button type="button"><span class="material-icons cartheart">add_shopping_cart</span></button>
               <button type="button"><span class="material-icons cartheart">favorite</span></button>
             </section>
-          </header>
           <h2>"Whipped"</h2>
           <p>Whipped - a soft, whipped cleanser that was created for intense moisturization. If you are looking for something
             to sooth your dry skin - this will do it. We swear.
@@ -203,8 +195,7 @@
         </article>
 
         <!-- Product 5 -->
-        <article class="items">
-          <header>
+        <article>
             <img src="img/product5.jpg" alt="Product Image">
             <section class="center">
               <span class="material-icons sizebtn">star</span><span class="material-icons sizebtn">star</span><span class="material-icons sizebtn">star</span><span class="material-icons sizebtn">star</span>
@@ -214,7 +205,6 @@
               <button type="button"><span class="material-icons cartheart">add_shopping_cart</span></button>
               <button type="button"><span class="material-icons cartheart">favorite</span></button>
             </section>
-          </header>
           <h2>"Jelly"</h2>
           <p>An energizing, citrusy cleanser that was created to wake you up even on your sleepiest days! Jelly was created
             with lemon and orange extracts to tone and tighten your skin.
@@ -222,8 +212,7 @@
           </p>
         </article>
 <!--Product 6-->
-        <article class = "items">
-          <header>
+        <article>
           <img src="img/product6.jpg" alt="Product Image" class="pic">
             <section class="center">
               <span class="material-icons sizebtn">star</span><span class="material-icons sizebtn">star</span><span class="material-icons sizebtn">star_half</span>
@@ -234,24 +223,25 @@
               <button type="button"><span class="material-icons cartheart">favorite</span></button>
               <br>
             </section>
-          </header>
         <h2>"Frosting"</h2>
         <p>Our little frosting smells so sweet, you'd almost think it was candy. This exfoliating cleanser bar
           will reduce blackheads while also soothing the skin with its shea butter properties.
           <a href="#">Check the reviews here.</a>
         </p>
       </article>
-    </section>
+  </section>
+  </div>
+</header>
 
 <!--navigation stuff that i have to fix in css-->
       <section role="navigation" aria-label="Pagination">
-        <p>1-5 of 23 products found</p>
-        <ol class="pages">
-          <li><a href="#" aria-label="Current Page, Page 1" aria-current="true">1</a></li>
-          <li><a href="#" aria-label="Page 2">2</a></li>
-          <li><a href="#" aria-label="Page 3">3</a></li>
-          <li><a href="#" aria-label="Page 4">4</a></li>
-          <li><a href="#" aria-label="Page 5">5</a></li>
+        <p class="found">1-6 of 23 products found</p>
+        <ol class = "pages">
+          <li class="pitems"><a href="#" aria-label="Current Page, Page 1" aria-current="true">1</a></li>
+          <li class="pitems"><a href="#" aria-label="Page 2">2</a></li>
+          <li class="pitems"><a href="#" aria-label="Page 3">3</a></li>
+          <li class="pitems"><a href="#" aria-label="Page 4">4</a></li>
+          <li class="pitems"><a href="#" aria-label="Page 5">5</a></li>
         </ol>
       </section>
     </main>
@@ -259,15 +249,15 @@
     <footer>
       <nav aria-label="Legal">
         <ul class="links">
-          <li><a href="#" class="links">Terms of Use</a></li>
-          <li><a href="#" class="links">Privacy Policy</a></li>
-          <li><a href="#" class="links">Accessibility Policy</a></li>
+          <li class="pitems"><a href="#" class="links">Terms of Use</a></li>
+          <li class="pitems"><a href="#" class="links">Privacy Policy</a></li>
+          <li class="pitems"><a href="#" class="links">Accessibility Policy</a></li>
         </ul>
       </nav>
       <ul class="links">
-        <li><a href="#" class="links">Facebook</a></li>
-        <li><a href="#" class="links">Instagram</a></li>
-        <li><a href="#" class="links">Twitter</a></li>
+        <li class="pitems"><a href="#" class="links">Facebook</a></li>
+        <li class="pitems"><a href="#" class="links">Instagram</a></li>
+        <li class="pitems"><a href="#" class="links">Twitter</a></li>
       </ul>
       <p>&copy; Copyright, 1991.</p>
     </footer>

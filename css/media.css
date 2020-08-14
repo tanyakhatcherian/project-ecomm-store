@@ -1,0 +1,153 @@
+@media screen and (min-width:768px) {
+    .sbar {
+        width: 35%;
+        max-width: 100%;
+    }
+
+    .searchbar {
+        padding-right: 2em;
+    }
+
+    select.products {
+        font-size: 15px;
+    }
+    
+    h1 {
+        font-size: 26px;
+    }
+    
+    fieldset {
+        font-size: 95%;
+    }
+    
+    select {
+        font-size: 15px;
+    }
+    
+    legend {
+        font-size: 18px;
+    }
+    
+    .sizebtn {
+        font-size: 23px;
+    }
+    
+    .pdisplay {
+        flex-direction: row;
+        align-content: space-between;
+        flex-wrap: wrap;
+    }
+    
+    img {
+        width: 100%;
+    }
+    
+    article {
+        width: 50%;
+    }
+    
+    .pages {
+        display: flex;
+        justify-content: center;
+    }
+
+    .pitems {
+        margin-right: 1em;
+    }
+    
+    .links {
+        justify-content: center;
+    }
+
+    .headbtn {
+        display: none;
+    }
+
+    }
+
+    @media screen and (min-width:1024px) {
+
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 5fr;
+        }
+        
+        .hidden {
+            display: none;
+        }
+
+        .pdisplay {
+            margin-top: .8em;
+            margin-left: 1em;
+            margin-right: 1em;
+            background-color: transparent;
+            border-style: none;
+        }
+
+        ul, ol {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            margin: 0em;
+        }
+
+        .pages {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            padding-bottom: .5em;
+            padding-right: 1em;
+        }
+        
+        h1 {
+            font-size: 40px;
+            margin-bottom: 0em;
+        }
+
+        .sbar {
+            width: 20%;
+        }
+
+        .searchbar {
+            padding-right: 3em;
+        }
+
+        select.products {
+            font-size: 20px;
+        }
+
+        .navbtn {
+            font-size: 25px;
+        }
+
+        h2 {
+            font-size: 20px;
+            margin-bottom: 0em;
+            margin-top: .5em;
+        }
+        
+        p {
+            font-size: 15px;
+            margin-top: .5em;
+        }
+
+        .cartheart {
+            font-size: 30px;
+        }
+
+        data {
+            font-size: 20px;
+        }
+
+        .found {
+            font-size: 13px;
+            text-align: right;
+            padding-right: 2.3em;
+            margin-bottom: .5em;
+        }
+
+        .headbtn {
+            font-size: 25px;
+            display: inline-block;
+        }
+    }
